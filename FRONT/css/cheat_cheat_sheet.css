@@ -59,7 +59,7 @@ div{
 }
 
 #container_list{
-    list-style: lower-greek;
+    list-style: lower-greek inside;
 }
 
 #container_margin{
