@@ -1,0 +1,88 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 15px;
+    background-color: #e09f3e;
+
+}
+
+p{
+    font-size: small;
+}
+
+div{
+    margin: 10px 15px;
+    padding: 15px;
+    background-color: #af7a2b;
+    border: 3px solid #946a2a;
+
+}
+
+#container_border{
+    border: 3px solid aqua;
+}
+
+#container_border_different{
+    border-top: 3px solid aqua;
+    border-bottom: 5px solid azure;
+    border-left: 8px solid brown;
+    border-right: 15px solid burlywood;
+}
+
+#container_border_radius{
+    border-radius: 30px;
+}
+
+#container_image{
+    background-image: url(../images/honeycomb.jpg);
+}
+
+#container_color{
+    color: yellow;
+}
+
+#container_font{
+    font: italic small-caps bold 16px cursive;
+}
+
+#container_font_style{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#container_width_height{
+    width: 250px;
+    height: 250px;
+}
+
+#container_list{
+    list-style: lower-greek;
+}
+
+#container_margin{
+    margin: 50px;
+}
+
+#container_padding{
+    padding: 50px;
+}
+
+#container_overflow{
+    height: 50px;
+    overflow: auto;
+}
+
+#container_display{
+    display: flex;
+}
+
+#container_position{
+    position: static;
+}
+
+#container_filter{
+    filter: blur(1px);
+}
