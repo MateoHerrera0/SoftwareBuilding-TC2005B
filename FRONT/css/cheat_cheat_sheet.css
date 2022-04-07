@@ -21,6 +21,14 @@ div{
 
 }
 
+#home{
+    height: fit-content;
+    width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bolder;
+}
+
 #container_border{
     border: 3px solid aqua;
 }
