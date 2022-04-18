@@ -4,12 +4,11 @@
 
 body{
     margin: 0px;
-    height: min-content;
+    overflow: visible;
 }
 
 
 div{
-    border: 1px  #000;
     margin: 0px;
     padding: 0px;
 }
@@ -22,12 +21,6 @@ header{
     color: aliceblue;
 }
 
-footer{
-    text-align: center;
-    background-color: darkslategray;
-    margin: 0px;
-}
-
 .flex-container{
     display: flex;
 }
@@ -38,15 +31,16 @@ footer{
 }
 
 #header-title{
-    margin: 0px 0px 0px 130px;
-    padding: 0px;
+    width: 300px;
     font-weight: bold;
+    font-size: large;
     align-items: center;
+    text-align: center;
 }
 
 #header-links{
     display: flex;
-    margin-right: 220px;
+    width: 350px;
     align-items: center;
 }
 
@@ -60,23 +54,53 @@ footer{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     background-color: orangered;
+    color: aliceblue;
 }
 
 #middle_lorem{
     text-align: left;
-    width: 500px;
+    width: 70%;
 }
 
 #newsletter{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: darkslategray;
-    margin: 0px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#newsletter-info{
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+#subscribe_button{
+    background-color: red;
+    color: aliceblue;
+}
+
+#image-section{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: small;
 }
 
 .align-center-image{
     align-items: center;
     text-align: center;
+    padding: 10px;
+}
+
+#footer{
+    text-align: center;
+    background-color: darkslategray;
+    color: aliceblue;
+    padding: 10px;
+    font-size: small;
 }
