@@ -1,0 +1,46 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+div{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#main-container{
+    justify-content: space-between;
+}
+
+#second-container{
+    justify-content: space-evenly;
+}
+
+#Box6{
+    order: 1;
+}
+
+#Box7{
+    order: 1;
+}
+
+#Box8{
+    flex: 3;
+    order: 1;
+}
+
+#Box9{
+    order: -3;
+}
+
+#Box10{
+    order: -2;
+}
