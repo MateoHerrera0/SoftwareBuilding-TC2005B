@@ -1,5 +1,5 @@
 # Web-Development-Cheat-Sheet
 
-This repository contains html web pages that contain the most common attributes used in web develoment. There is one page for HTML, CSS and JavaScript.
+This repository contains schoolwork related to web design and programming, databases and videogame design.
 
 This also serves as practice for GitHub Pages.
