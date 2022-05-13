@@ -1,6 +1,6 @@
 // Mateo Herrera 
 // Gerardo Gutierrez
-// Player movement Script
+// Player movement, death and respawn Scripts
 
 using System.Collections;
 using System.Collections.Generic;
