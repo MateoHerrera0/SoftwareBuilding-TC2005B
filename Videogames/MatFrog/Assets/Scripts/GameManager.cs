@@ -24,17 +24,20 @@ public class GameManager : MonoBehaviour
     private int lives;
     private int time;
 
+    // 
     private void Awake() 
     {
         homes = FindObjectsOfType<Home>();
         frogger = FindObjectOfType<Frogger>();
     }
 
+    // New game when first starting
     private void Start()
     {
         NewGame();
     }
 
+    // New game with scroe and lives values reset
     private void NewGame()
     {
         gameOverMenu.SetActive(false);
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
         NewLevel();
     }
 
+    // new level check for respawn available
     private void NewLevel()
     {
         for(int i = 0; i < homes.Length; i++)
@@ -55,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    // Game Manager respawn function, timer reset.
     private void Respawn()
     {
         frogger.Respawn();
@@ -64,6 +68,8 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Timer(30));
     }
 
+    // Timer set for x time, ui display of timer
+    // timer death mecanic
     private IEnumerator Timer(int duration)
     {
         time = duration;
@@ -81,6 +87,8 @@ public class GameManager : MonoBehaviour
         frogger.Death();
     }
 
+    // Lives and score mod when dying, 
+    // respawn if lives left
     public void Died() {
         {
             SetLives(lives - 1);
@@ -98,6 +106,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Game over to stop player movement/game and display menu
     private void GameOver()
     {
         frogger.gameObject.SetActive(false);
@@ -108,6 +117,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(PlayAgain());
     }
 
+    // Play again button
     private IEnumerator PlayAgain()
     {
         bool playAgain = false;
@@ -125,11 +135,13 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
+    // score mecanic for advancing game rows
     public void AdvancedRow()
     {
         SetScore(score + 10);
     }
 
+    // Home objective check (progress)
     public void HomeOccupied()
     {
         frogger.gameObject.SetActive(false);
@@ -150,6 +162,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // level cleared aux function
     private bool Cleared()
     {
         for(int i = 0; i < homes.Length; i++)
@@ -163,6 +176,7 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    // Setting score and display it
     private void SetScore(int score)
     {
         this.score = score;
@@ -170,6 +184,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    // Setting lives and display them
     private void SetLives(int lives)
     {
         this.lives = lives;
