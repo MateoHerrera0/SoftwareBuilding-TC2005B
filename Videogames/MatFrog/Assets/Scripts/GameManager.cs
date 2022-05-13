@@ -85,6 +85,8 @@ public class GameManager : MonoBehaviour
         {
             SetLives(lives - 1);
 
+            SetScore(score - 150);
+
             if(lives > 0)
             {
                 Invoke(nameof(Respawn), 1f);

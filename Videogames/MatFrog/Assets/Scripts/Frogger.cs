@@ -8,11 +8,6 @@ using UnityEngine;
 
 public class Frogger : MonoBehaviour
 {
-    // // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
 
     private SpriteRenderer spriteRenderer;
     public Sprite idleSprite;
