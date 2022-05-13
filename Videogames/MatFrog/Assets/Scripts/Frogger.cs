@@ -17,6 +17,7 @@ public class Frogger : MonoBehaviour
     private Vector3 spawnPosition;
     private float farthestRow;
 
+    // spawn player on position and load sprite
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -48,6 +49,7 @@ public class Frogger : MonoBehaviour
         }
     }
 
+    // detection of boundaries while moving and animation 
     private void Move(Vector3 direction)
     {
         Vector3 destination = transform.position + direction;
@@ -89,6 +91,7 @@ public class Frogger : MonoBehaviour
 
     }
 
+    // fog leap animation
     private IEnumerator Leap(Vector3 destination)
     {
         Vector3 startPosition = transform.position;
@@ -110,6 +113,7 @@ public class Frogger : MonoBehaviour
         spriteRenderer.sprite = idleSprite;
     }
 
+    // Stop player movement and load dead sprite
     public void Death()
     {
         StopAllCoroutines();
@@ -122,6 +126,7 @@ public class Frogger : MonoBehaviour
         FindObjectOfType<GameManager>().Died();
     }
 
+    // Player respawn, postion, movement, sprite
     public void Respawn()
     {
         StopAllCoroutines();
@@ -134,6 +139,7 @@ public class Frogger : MonoBehaviour
         enabled = true;
     }
 
+    // Player dies upon contact with Obstacles
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(enabled && other.gameObject.layer == LayerMask.NameToLayer("Obstacle") && transform.parent == null)
