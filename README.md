@@ -4,10 +4,10 @@ This repository contains schoolwork related to web design and programming, datab
 
 This also serves as practice for GitHub Pages.
 
-**Link to gitHub pages:
+**Link to gitHub pages:**
 
 https://mateoherrera0.github.io/SoftwareBuilding-TC2005B
 
-**Link To Hosted Videogame:
+**Link To Hosted Videogame:**
 
 https://mateoherrera0.github.io/SoftwareBuilding-TC2005B/Videogames/MatFrog/Builds/matFrog6.html
