@@ -21,6 +21,15 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/api/hello', (req, res) => {
+    console.log(req.query)
+    if (req.query.hasOwnProperty('name')) {
+        res.send(`${req.query.name}`)
+    } else {
+        res.send('hello')
+    }
+})
+//
 app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`)
 })
